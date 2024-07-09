@@ -26,7 +26,7 @@ mixin make_post(item, is_detail)
                 if item.tags
                     if item.tags.length > 0
                         span.meta-item
-                            i.fa.fa-tag
+                            i.fa.fa-hashtag
                             span &nbsp;
                             - item.tags.sort('posts').each(function(item) {
                             a.a-tag(href=config.root + item.path, title= item.name)= item.name
